@@ -351,7 +351,7 @@ typedef enum {
 #define EP_TARGET_FW        461 //1  bytes = flag
 #define EP_TIMEZONE         462//1  bytes = flag
 #define EP_TIME_ISDST       463//1  bytes = flag
-#define EP_TIME_SERVER1 464//128 bytes 127+1 = string  ; warning does not support multibyte char like chinese  
+#define EP_TIME_SERVER1 464//128 bytes 127+1 = string  ; warning does not support multibyte char like chinese
 #define EP_TIME_SERVER2  593 //128 bytes 127+1 = string  ; warning does not support multibyte char like chinese
 #define EP_TIME_SERVER3  722 //128 bytes 127+1 = string  ; warning does not support multibyte char like chinese
 #define EP_IS_DIRECT_SD   850//1  bytes = flag
@@ -367,16 +367,16 @@ typedef enum {
 
 //default values
 #define DEFAULT_WIFI_MODE           AP_MODE
-const char DEFAULT_AP_SSID []  PROGMEM =        "ESP3D";
-const char DEFAULT_AP_PASSWORD [] PROGMEM = "12345678";
-const char DEFAULT_STA_SSID []  PROGMEM =       "ESP3D";
-const char DEFAULT_STA_PASSWORD [] PROGMEM =    "12345678";
+const char DEFAULT_AP_SSID []  PROGMEM =        "DEA_420_Detection_Unit";
+const char DEFAULT_AP_PASSWORD [] PROGMEM = "Green3176ChadsSprings";
+const char DEFAULT_STA_SSID []  PROGMEM =       "DEA_420_Detection_Unit";
+const char DEFAULT_STA_PASSWORD [] PROGMEM =    "Green3176ChadsSprings";
 const byte DEFAULT_STA_IP_MODE  =               DHCP_MODE;
 const byte DEFAULT_AP_IP_MODE =                 STATIC_IP_MODE;
 const byte DEFAULT_IP_VALUE[]   =           {192, 168, 0, 1};
 const byte DEFAULT_MASK_VALUE[]  =          {255, 255, 255, 0};
 #define DEFAULT_GATEWAY_VALUE               DEFAULT_IP_VALUE
-const long DEFAULT_BAUD_RATE =          115200;
+const long DEFAULT_BAUD_RATE =          250000;
 #define DEFAULT_PHY_MODE            WIFI_PHY_MODE_11G
 #define DEFAULT_SLEEP_MODE          WIFI_MODEM_SLEEP
 #define DEFAULT_CHANNEL             11
